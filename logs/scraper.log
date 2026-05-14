@@ -1,0 +1,8 @@
+2026-05-14 18:31:37,822 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 18:31:38,636 [INFO] FrequenciaScraper -- sc_init (regex fallback): 2824
+2026-05-14 18:31:38,637 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 18:31:39,502 [INFO] FrequenciaScraper -- sc_init (regex fallback): 624
+2026-05-14 18:31:39,999 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 18:31:40,259 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 73850 chars
+2026-05-14 18:31:44,457 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:31:44,457 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
