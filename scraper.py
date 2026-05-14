@@ -10,6 +10,7 @@
 # =============================================================================
 
 import re
+import json
 import time
 import random
 import logging
@@ -17,6 +18,7 @@ import copy
 import io
 import os
 from abc import ABC, abstractmethod
+from collections import Counter
 from typing import Optional
 
 import requests
@@ -136,7 +138,11 @@ class ScriptCaseScraper(ABC):
         reraise=True,
     )
     def _post_ajax(self, payload: dict) -> BeautifulSoup:
-        """POST para o endpoint ScriptCase com retry automatico."""
+        """POST para o endpoint ScriptCase com retry automatico.
+
+        ScriptCase retorna JSON com fragmentos HTML em setValue.
+        Detectamos isso e montamos um soup com sc_grid_body + toolbar.
+        """
         t0   = time.time()
         resp = self.session.post(self.endpoint, data=payload,
                                   timeout=config.REQUEST_TIMEOUT)
@@ -152,35 +158,108 @@ class ScriptCaseScraper(ABC):
             raise requests.HTTPError(f"HTTP {resp.status_code}")
 
         time.sleep(random.uniform(config.DELAY_MIN, config.DELAY_MAX))
-        return BeautifulSoup(resp.text, "lxml")
+
+        text = resp.text
+        # ScriptCase AJAX retorna JSON com fragmentos HTML em setValue
+        if text.lstrip().startswith("{"):
+            try:
+                data = json.loads(text)
+                # Armazena vars de paginacao para _get_pagination_info
+                self._last_set_var = {
+                    v["var"].strip(): v["value"]
+                    for v in data.get("setVar", [])
+                }
+                # Extrai fragmentos HTML relevantes
+                fragments = [
+                    sv["value"]
+                    for sv in data.get("setValue", [])
+                    if sv.get("field") in ("sc_grid_body", "sc_grid_toobar_bot")
+                ]
+                combined = "\n".join(fragments)
+                self._log.debug(
+                    f"JSON ScriptCase: scQtReg={self._last_set_var.get('scQtReg')} | "
+                    f"{len(combined)} chars de HTML extraidos"
+                )
+                return BeautifulSoup(combined, "lxml")
+            except (json.JSONDecodeError, KeyError, StopIteration):
+                pass
+
+        self._last_set_var = {}
+        return BeautifulSoup(text, "lxml")
 
     # -------------------------------------------------------------------------
 
     def _extract_table(self, soup: BeautifulSoup) -> list:
-        """Extrai dados da(s) tabela(s) HTML retornada(s) pelo ScriptCase."""
-        results = []
-        skip_texts = {"Primeiro", "Anterior", "Proximo", "Ultimo", ""}
+        """Extrai dados da(s) tabela(s) HTML retornada(s) pelo ScriptCase.
 
-        for table in soup.find_all("table"):
+        ScriptCase envolve os dados em <TABLE class='scGridTabela'> com
+        linhas de cabecalho mistas (filtros, grupos, depois colunas reais).
+        Usa a contagem modal de celulas para identificar o cabecalho correto.
+        A primeira coluna costuma ser vazia (checkbox); filtramos pela chave.
+        """
+        results = []
+        # Textos de navegacao (nunca sao dados reais)
+        nav_texts = {"Primeiro", "Anterior", "Proximo", "Ultimo", "Próximo", "Último"}
+
+        # Prioriza scGridTabela; cai para qualquer tabela como fallback
+        target_tables = (
+            soup.find_all("table", class_="scGridTabela")
+            or soup.find_all("table")
+        )
+
+        for table in target_tables:
             rows = table.find_all("tr")
             if len(rows) < 2:
                 continue
 
-            headers = [c.get_text(strip=True) for c in rows[0].find_all(["th", "td"])]
-            if not any(headers):
+            # Contagem modal: quantas celulas tem a linha mais comum (dados)
+            counts = Counter(
+                len(r.find_all(["td", "th"]))
+                for r in rows
+                if r.find_all(["td", "th"])
+            )
+            if not counts:
+                continue
+            target_n = counts.most_common(1)[0][0]
+
+            # Cabecalho: primeira linha com target_n celulas sem "=>"
+            header_idx = None
+            for i, row in enumerate(rows):
+                cells = [c.get_text(strip=True) for c in row.find_all(["th", "td"])]
+                if len(cells) == target_n and not any("=>" in c for c in cells):
+                    header_idx = i
+                    break
+
+            if header_idx is None:
                 continue
 
-            for row in rows[1:]:
-                cells  = row.find_all(["td", "th"])
+            headers = [
+                c.get_text(strip=True)
+                for c in rows[header_idx].find_all(["th", "td"])
+            ]
+            if not any(h for h in headers if h):
+                continue
+
+            for row in rows[header_idx + 1:]:
+                cells = row.find_all(["td", "th"])
                 if len(cells) != len(headers):
                     continue
                 values = [c.get_text(strip=True) for c in cells]
-                if not any(values) or values[0] in skip_texts:
+                if not any(values):
                     continue
-                row_dict = dict(zip(headers, values))
-                if all(v == "" for v in row_dict.values()):
+                # Ignora linhas de navegacao (Primeiro, Anterior...)
+                # usando o primeiro valor NAO-vazio (ScriptCase tem col. vazia no inicio)
+                first_val = next((v for v in values if v), "")
+                if first_val in nav_texts:
+                    continue
+                # Remove entradas com chave vazia (coluna checkbox do ScriptCase)
+                row_dict = {k: v for k, v in zip(headers, values) if k}
+                if not row_dict or all(v == "" for v in row_dict.values()):
                     continue
                 results.append(row_dict)
+
+            if results:
+                break
 
         return results
 
@@ -188,9 +267,20 @@ class ScriptCaseScraper(ABC):
 
     def _get_pagination_info(self, soup: BeautifulSoup) -> tuple:
         """
-        Extrai (registros_por_pagina, total_registros) do texto de paginacao.
-        Padrao ScriptCase: '[1 a 43 de 22485]'
+        Extrai (registros_por_pagina, total_registros).
+
+        Prioridade 1: setVar do JSON ScriptCase (scQtReg, nm_gp_rec_fim/ini).
+        Prioridade 2: texto HTML padrao '[1 a 43 de 22485]'.
         """
+        sv = getattr(self, "_last_set_var", {})
+        if sv and sv.get("scQtReg") is not None:
+            total    = int(sv["scQtReg"])
+            ini      = int(sv.get("nm_gp_rec_ini", 0))
+            fim      = int(sv.get("nm_gp_rec_fim", 0))
+            per_page = fim - ini if fim > ini else total
+            self._log.info(f"Paginacao (JSON): {per_page}/pag | total: {total}")
+            return per_page, total
+
         text = soup.get_text(" ", strip=True)
         m = re.search(r"(\d+)\s+a\s+(\d+)\s+de\s+(\d+)", text)
         if m:

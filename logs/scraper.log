@@ -6,3 +6,1070 @@
 2026-05-14 18:31:40,259 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 73850 chars
 2026-05-14 18:31:44,457 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
 2026-05-14 18:31:44,457 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
+2026-05-14 18:33:23,619 [INFO] VereadorScraper -- Coletando vereadores: https://www.cms.ba.gov.br/vereadores
+2026-05-14 18:33:25,391 [INFO] VereadorScraper -- VereadorScraper: 43 vereadores
+2026-05-14 18:33:26,113 [INFO] transformer -- Salvo: data/vereadores.parquet (43 registros)
+2026-05-14 18:33:26,117 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 18:33:26,951 [INFO] FrequenciaScraper -- sc_init (regex fallback): 4878
+2026-05-14 18:33:27,453 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 18:33:27,917 [INFO] FrequenciaScraper -- Meses disponiveis: 81
+2026-05-14 18:33:27,917 [INFO] FrequenciaScraper -- [1/81] Mes: 2026-04
+2026-05-14 18:33:28,096 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 73850 chars
+2026-05-14 18:33:32,440 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:33:32,627 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60314 chars
+2026-05-14 18:33:36,784 [INFO] FrequenciaScraper -- [2/81] Mes: 2026-03
+2026-05-14 18:33:37,101 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 76399 chars
+2026-05-14 18:33:39,433 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:33:39,681 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60323 chars
+2026-05-14 18:33:42,328 [INFO] FrequenciaScraper -- [3/81] Mes: 2026-02
+2026-05-14 18:33:42,629 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 71222 chars
+2026-05-14 18:33:44,999 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:33:45,294 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.29s | 60280 chars
+2026-05-14 18:33:47,806 [INFO] FrequenciaScraper -- [4/81] Mes: 2025-12
+2026-05-14 18:33:48,160 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 73205 chars
+2026-05-14 18:33:50,935 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:33:51,089 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60313 chars
+2026-05-14 18:33:55,798 [INFO] FrequenciaScraper -- [5/81] Mes: 2025-11
+2026-05-14 18:33:56,079 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 75156 chars
+2026-05-14 18:34:00,752 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:01,060 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.31s | 60332 chars
+2026-05-14 18:34:03,119 [INFO] FrequenciaScraper -- [6/81] Mes: 2025-10
+2026-05-14 18:34:03,316 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 73851 chars
+2026-05-14 18:34:05,987 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:06,143 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60315 chars
+2026-05-14 18:34:08,348 [INFO] FrequenciaScraper -- [7/81] Mes: 2025-09
+2026-05-14 18:34:08,607 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 77717 chars
+2026-05-14 18:34:10,740 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:10,992 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60317 chars
+2026-05-14 18:34:15,679 [INFO] FrequenciaScraper -- [8/81] Mes: 2025-08
+2026-05-14 18:34:15,902 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 74510 chars
+2026-05-14 18:34:18,527 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:18,678 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60330 chars
+2026-05-14 18:34:21,591 [INFO] FrequenciaScraper -- [9/81] Mes: 2025-06
+2026-05-14 18:34:21,850 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 73852 chars
+2026-05-14 18:34:24,333 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:24,574 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60316 chars
+2026-05-14 18:34:29,480 [INFO] FrequenciaScraper -- [10/81] Mes: 2025-05
+2026-05-14 18:34:29,710 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 76892 chars
+2026-05-14 18:34:32,005 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:32,188 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60311 chars
+2026-05-14 18:34:36,071 [INFO] FrequenciaScraper -- [11/81] Mes: 2025-04
+2026-05-14 18:34:36,387 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 76433 chars
+2026-05-14 18:34:38,689 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:38,948 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60321 chars
+2026-05-14 18:34:41,714 [INFO] FrequenciaScraper -- [12/81] Mes: 2025-03
+2026-05-14 18:34:42,019 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 75782 chars
+2026-05-14 18:34:44,612 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:44,886 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60320 chars
+2026-05-14 18:34:48,133 [INFO] FrequenciaScraper -- [13/81] Mes: 2025-02
+2026-05-14 18:34:48,470 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 77485 chars
+2026-05-14 18:34:51,509 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:51,677 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60283 chars
+2026-05-14 18:34:53,922 [INFO] FrequenciaScraper -- [14/81] Mes: 2025-01
+2026-05-14 18:34:54,210 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 68546 chars
+2026-05-14 18:34:57,309 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:34:57,505 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60493 chars
+2026-05-14 18:35:01,637 [INFO] FrequenciaScraper -- [15/81] Mes: 2024-12
+2026-05-14 18:35:01,885 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 73214 chars
+2026-05-14 18:35:06,174 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:06,492 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.32s | 60322 chars
+2026-05-14 18:35:10,292 [INFO] FrequenciaScraper -- [16/81] Mes: 2024-11
+2026-05-14 18:35:10,592 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 73233 chars
+2026-05-14 18:35:13,607 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:13,762 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60341 chars
+2026-05-14 18:35:17,474 [INFO] FrequenciaScraper -- [17/81] Mes: 2024-10
+2026-05-14 18:35:17,759 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 74505 chars
+2026-05-14 18:35:22,299 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:22,573 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60325 chars
+2026-05-14 18:35:25,294 [INFO] FrequenciaScraper -- [18/81] Mes: 2024-09
+2026-05-14 18:35:25,646 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 70638 chars
+2026-05-14 18:35:30,274 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:30,560 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.28s | 60322 chars
+2026-05-14 18:35:33,076 [INFO] FrequenciaScraper -- [19/81] Mes: 2024-08
+2026-05-14 18:35:33,432 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 71926 chars
+2026-05-14 18:35:35,479 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:35,641 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60322 chars
+2026-05-14 18:35:37,962 [INFO] FrequenciaScraper -- [20/81] Mes: 2024-06
+2026-05-14 18:35:38,342 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.38s | 74501 chars
+2026-05-14 18:35:43,225 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:43,468 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60321 chars
+2026-05-14 18:35:46,707 [INFO] FrequenciaScraper -- [21/81] Mes: 2024-05
+2026-05-14 18:35:47,047 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 74500 chars
+2026-05-14 18:35:49,293 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:49,444 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60320 chars
+2026-05-14 18:35:53,893 [INFO] FrequenciaScraper -- [22/81] Mes: 2024-04
+2026-05-14 18:35:54,215 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 76433 chars
+2026-05-14 18:35:57,988 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:35:58,207 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60321 chars
+2026-05-14 18:36:02,280 [INFO] FrequenciaScraper -- [23/81] Mes: 2024-03
+2026-05-14 18:36:02,529 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 74484 chars
+2026-05-14 18:36:06,392 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:06,547 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60328 chars
+2026-05-14 18:36:10,687 [INFO] FrequenciaScraper -- [24/81] Mes: 2024-02
+2026-05-14 18:36:10,908 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 75575 chars
+2026-05-14 18:36:15,269 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:15,442 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60287 chars
+2026-05-14 18:36:17,641 [INFO] FrequenciaScraper -- [25/81] Mes: 2023-12
+2026-05-14 18:36:17,878 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 73218 chars
+2026-05-14 18:36:22,663 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:22,817 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60326 chars
+2026-05-14 18:36:25,579 [INFO] FrequenciaScraper -- [26/81] Mes: 2023-11
+2026-05-14 18:36:25,855 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 75793 chars
+2026-05-14 18:36:28,424 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:28,621 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60325 chars
+2026-05-14 18:36:31,681 [INFO] FrequenciaScraper -- [27/81] Mes: 2023-10
+2026-05-14 18:36:32,001 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 75199 chars
+2026-05-14 18:36:34,062 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:34,215 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60369 chars
+2026-05-14 18:36:37,999 [INFO] FrequenciaScraper -- [28/81] Mes: 2023-09
+2026-05-14 18:36:38,351 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 75154 chars
+2026-05-14 18:36:41,220 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:41,525 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.30s | 60330 chars
+2026-05-14 18:36:45,528 [INFO] FrequenciaScraper -- [29/81] Mes: 2023-08
+2026-05-14 18:36:45,825 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 77727 chars
+2026-05-14 18:36:50,592 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:50,844 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60327 chars
+2026-05-14 18:36:53,771 [INFO] FrequenciaScraper -- [30/81] Mes: 2023-06
+2026-05-14 18:36:54,120 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 73862 chars
+2026-05-14 18:36:56,185 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:36:56,884 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.70s | 60326 chars
+2026-05-14 18:36:59,937 [INFO] FrequenciaScraper -- [31/81] Mes: 2023-05
+2026-05-14 18:37:00,263 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 77079 chars
+2026-05-14 18:37:04,705 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:04,933 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60323 chars
+2026-05-14 18:37:07,974 [INFO] FrequenciaScraper -- [32/81] Mes: 2023-04
+2026-05-14 18:37:08,250 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 75161 chars
+2026-05-14 18:37:11,034 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:11,220 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60337 chars
+2026-05-14 18:37:15,553 [INFO] FrequenciaScraper -- [33/81] Mes: 2023-03
+2026-05-14 18:37:15,830 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 75782 chars
+2026-05-14 18:37:18,818 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:19,005 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60332 chars
+2026-05-14 18:37:22,363 [INFO] FrequenciaScraper -- [34/81] Mes: 2023-02
+2026-05-14 18:37:22,625 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 75495 chars
+2026-05-14 18:37:26,605 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:26,793 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60284 chars
+2026-05-14 18:37:29,525 [INFO] FrequenciaScraper -- [35/81] Mes: 2022-12
+2026-05-14 18:37:29,863 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 71295 chars
+2026-05-14 18:37:33,657 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:33,808 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60335 chars
+2026-05-14 18:37:36,878 [INFO] FrequenciaScraper -- [36/81] Mes: 2022-11
+2026-05-14 18:37:37,231 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 74982 chars
+2026-05-14 18:37:39,499 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:39,716 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60333 chars
+2026-05-14 18:37:43,596 [INFO] FrequenciaScraper -- [37/81] Mes: 2022-10
+2026-05-14 18:37:43,886 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 68614 chars
+2026-05-14 18:37:47,512 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:47,785 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60542 chars
+2026-05-14 18:37:51,696 [INFO] FrequenciaScraper -- [38/81] Mes: 2022-08
+2026-05-14 18:37:51,981 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 70637 chars
+2026-05-14 18:37:56,552 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:37:56,698 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60321 chars
+2026-05-14 18:37:59,016 [INFO] FrequenciaScraper -- [39/81] Mes: 2022-07
+2026-05-14 18:37:59,349 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.33s | 68585 chars
+2026-05-14 18:38:03,186 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:03,336 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60506 chars
+2026-05-14 18:38:06,868 [INFO] FrequenciaScraper -- [40/81] Mes: 2022-06
+2026-05-14 18:38:07,136 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 70643 chars
+2026-05-14 18:38:09,761 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:09,913 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60327 chars
+2026-05-14 18:38:13,822 [INFO] FrequenciaScraper -- [41/81] Mes: 2022-05
+2026-05-14 18:38:14,198 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.37s | 71934 chars
+2026-05-14 18:38:17,935 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:18,191 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60336 chars
+2026-05-14 18:38:21,873 [INFO] FrequenciaScraper -- [42/81] Mes: 2022-04
+2026-05-14 18:38:22,186 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 68576 chars
+2026-05-14 18:38:24,247 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:24,409 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60507 chars
+2026-05-14 18:38:27,278 [INFO] FrequenciaScraper -- [43/81] Mes: 2022-03
+2026-05-14 18:38:27,512 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 74878 chars
+2026-05-14 18:38:31,723 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:31,914 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60305 chars
+2026-05-14 18:38:34,813 [INFO] FrequenciaScraper -- [44/81] Mes: 2022-02
+2026-05-14 18:38:35,087 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 73601 chars
+2026-05-14 18:38:38,495 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:38,660 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60304 chars
+2026-05-14 18:38:43,610 [INFO] FrequenciaScraper -- [45/81] Mes: 2021-12
+2026-05-14 18:38:43,897 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 74351 chars
+2026-05-14 18:38:47,681 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:47,830 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60346 chars
+2026-05-14 18:38:50,324 [INFO] FrequenciaScraper -- [46/81] Mes: 2021-11
+2026-05-14 18:38:50,655 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.33s | 73238 chars
+2026-05-14 18:38:54,963 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:38:55,157 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60346 chars
+2026-05-14 18:38:59,909 [INFO] FrequenciaScraper -- [47/81] Mes: 2021-10
+2026-05-14 18:39:00,176 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 73879 chars
+2026-05-14 18:39:02,549 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:02,719 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60343 chars
+2026-05-14 18:39:07,650 [INFO] FrequenciaScraper -- [48/81] Mes: 2021-09
+2026-05-14 18:39:07,960 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 72596 chars
+2026-05-14 18:39:10,273 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:10,621 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.35s | 60348 chars
+2026-05-14 18:39:14,380 [INFO] FrequenciaScraper -- [49/81] Mes: 2021-08
+2026-05-14 18:39:14,666 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 73884 chars
+2026-05-14 18:39:18,571 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:18,812 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60348 chars
+2026-05-14 18:39:22,636 [INFO] FrequenciaScraper -- [50/81] Mes: 2021-07
+2026-05-14 18:39:22,881 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 68640 chars
+2026-05-14 18:39:25,860 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:26,187 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.33s | 60568 chars
+2026-05-14 18:39:29,669 [INFO] FrequenciaScraper -- [51/81] Mes: 2021-06
+2026-05-14 18:39:29,975 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 70652 chars
+2026-05-14 18:39:33,318 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:33,489 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60336 chars
+2026-05-14 18:39:38,047 [INFO] FrequenciaScraper -- [52/81] Mes: 2021-05
+2026-05-14 18:39:38,421 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.37s | 72590 chars
+2026-05-14 18:39:42,311 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:42,464 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60342 chars
+2026-05-14 18:39:46,988 [INFO] FrequenciaScraper -- [53/81] Mes: 2021-04
+2026-05-14 18:39:47,191 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 73228 chars
+2026-05-14 18:39:51,821 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:39:52,265 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.44s | 60342 chars
+2026-05-14 18:39:56,138 [INFO] FrequenciaScraper -- [54/81] Mes: 2021-03
+2026-05-14 18:39:56,395 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 74295 chars
+2026-05-14 18:39:59,907 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:00,493 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.58s | 60308 chars
+2026-05-14 18:40:03,449 [INFO] FrequenciaScraper -- [55/81] Mes: 2021-02
+2026-05-14 18:40:03,663 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 72526 chars
+2026-05-14 18:40:06,532 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:06,803 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60308 chars
+2026-05-14 18:40:11,467 [INFO] FrequenciaScraper -- [56/81] Mes: 2020-12
+2026-05-14 18:40:11,856 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.39s | 70584 chars
+2026-05-14 18:40:16,701 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:16,852 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60268 chars
+2026-05-14 18:40:19,101 [INFO] FrequenciaScraper -- [57/81] Mes: 2020-10
+2026-05-14 18:40:19,343 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 68558 chars
+2026-05-14 18:40:23,147 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:23,407 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60486 chars
+2026-05-14 18:40:25,444 [INFO] FrequenciaScraper -- [58/81] Mes: 2020-09
+2026-05-14 18:40:25,688 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 71889 chars
+2026-05-14 18:40:28,046 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:28,210 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60285 chars
+2026-05-14 18:40:31,091 [INFO] FrequenciaScraper -- [59/81] Mes: 2020-08
+2026-05-14 18:40:31,418 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.33s | 71238 chars
+2026-05-14 18:40:33,583 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:33,771 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60278 chars
+2026-05-14 18:40:36,998 [INFO] FrequenciaScraper -- [60/81] Mes: 2020-07
+2026-05-14 18:40:37,258 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 70593 chars
+2026-05-14 18:40:41,003 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:41,349 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.35s | 60277 chars
+2026-05-14 18:40:45,139 [INFO] FrequenciaScraper -- [61/81] Mes: 2020-06
+2026-05-14 18:40:45,548 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.40s | 74284 chars
+2026-05-14 18:40:47,935 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:48,143 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60279 chars
+2026-05-14 18:40:53,021 [INFO] FrequenciaScraper -- [62/81] Mes: 2020-05
+2026-05-14 18:40:53,242 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 70594 chars
+2026-05-14 18:40:55,618 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:40:55,865 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60278 chars
+2026-05-14 18:41:00,831 [INFO] FrequenciaScraper -- [63/81] Mes: 2020-04
+2026-05-14 18:41:01,114 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 72999 chars
+2026-05-14 18:41:05,063 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:05,310 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60282 chars
+2026-05-14 18:41:09,256 [INFO] FrequenciaScraper -- [64/81] Mes: 2020-03
+2026-05-14 18:41:09,613 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.36s | 75747 chars
+2026-05-14 18:41:13,792 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:13,969 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60285 chars
+2026-05-14 18:41:16,658 [INFO] FrequenciaScraper -- [65/81] Mes: 2020-02
+2026-05-14 18:41:16,881 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 76731 chars
+2026-05-14 18:41:20,212 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:20,374 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60244 chars
+2026-05-14 18:41:23,110 [INFO] FrequenciaScraper -- [66/81] Mes: 2019-12
+2026-05-14 18:41:23,403 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 75207 chars
+2026-05-14 18:41:26,888 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:27,122 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60329 chars
+2026-05-14 18:41:29,311 [INFO] FrequenciaScraper -- [67/81] Mes: 2019-11
+2026-05-14 18:41:29,584 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 76507 chars
+2026-05-14 18:41:32,849 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:33,017 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60335 chars
+2026-05-14 18:41:36,177 [INFO] FrequenciaScraper -- [68/81] Mes: 2019-10
+2026-05-14 18:41:36,559 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.38s | 77685 chars
+2026-05-14 18:41:41,229 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:41,396 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60285 chars
+2026-05-14 18:41:43,955 [INFO] FrequenciaScraper -- [69/81] Mes: 2019-09
+2026-05-14 18:41:44,326 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.37s | 77686 chars
+2026-05-14 18:41:47,179 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:47,399 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60286 chars
+2026-05-14 18:41:49,707 [INFO] FrequenciaScraper -- [70/81] Mes: 2019-08
+2026-05-14 18:41:50,061 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 77042 chars
+2026-05-14 18:41:53,189 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:41:53,439 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60286 chars
+2026-05-14 18:41:56,974 [INFO] FrequenciaScraper -- [71/81] Mes: 2019-07
+2026-05-14 18:41:57,249 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 72542 chars
+2026-05-14 18:42:00,045 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:00,305 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60294 chars
+2026-05-14 18:42:02,829 [INFO] FrequenciaScraper -- [72/81] Mes: 2019-06
+2026-05-14 18:42:03,171 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 74465 chars
+2026-05-14 18:42:05,924 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:06,177 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60285 chars
+2026-05-14 18:42:10,486 [INFO] FrequenciaScraper -- [73/81] Mes: 2019-05
+2026-05-14 18:42:10,960 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.47s | 77036 chars
+2026-05-14 18:42:15,293 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:15,558 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60280 chars
+2026-05-14 18:42:18,376 [INFO] FrequenciaScraper -- [74/81] Mes: 2019-04
+2026-05-14 18:42:18,733 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.36s | 78977 chars
+2026-05-14 18:42:23,252 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:23,421 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60283 chars
+2026-05-14 18:42:26,575 [INFO] FrequenciaScraper -- [75/81] Mes: 2019-03
+2026-05-14 18:42:26,785 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 82876 chars
+2026-05-14 18:42:29,581 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:29,936 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.35s | 60318 chars
+2026-05-14 18:42:33,907 [INFO] FrequenciaScraper -- [76/81] Mes: 2019-02
+2026-05-14 18:42:34,258 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 75698 chars
+2026-05-14 18:42:37,216 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:37,476 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60284 chars
+2026-05-14 18:42:39,830 [INFO] FrequenciaScraper -- [77/81] Mes: 2018-12
+2026-05-14 18:42:40,046 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 71882 chars
+2026-05-14 18:42:42,854 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:43,006 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60278 chars
+2026-05-14 18:42:46,282 [INFO] FrequenciaScraper -- [78/81] Mes: 2018-11
+2026-05-14 18:42:46,622 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 71890 chars
+2026-05-14 18:42:51,404 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:42:51,560 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60286 chars
+2026-05-14 18:42:55,744 [INFO] FrequenciaScraper -- [79/81] Mes: 2018-10
+2026-05-14 18:42:55,962 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 75732 chars
+2026-05-14 18:43:00,638 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:43:00,790 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60264 chars
+2026-05-14 18:43:03,849 [INFO] FrequenciaScraper -- [80/81] Mes: 2018-09
+2026-05-14 18:43:04,097 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 16203 chars
+2026-05-14 18:43:06,536 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:43:06,682 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 8131 chars
+2026-05-14 18:43:10,801 [INFO] FrequenciaScraper -- [81/81] Mes: 2018-05
+2026-05-14 18:43:11,061 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 16199 chars
+2026-05-14 18:43:15,463 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:43:15,600 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.14s | 8127 chars
+2026-05-14 18:43:18,895 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
+2026-05-14 18:43:18,898 [WARNING] transformer -- transform_frequencia: lista vazia recebida
+2026-05-14 18:43:18,982 [INFO] transformer -- Salvo: data/frequencia.parquet (0 registros)
+2026-05-14 18:43:19,067 [INFO] ProdutividadeScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar/
+2026-05-14 18:43:19,949 [INFO] ProdutividadeScraper -- sc_init (input hidden): 2518
+2026-05-14 18:43:20,881 [INFO] ProdutividadeScraper -- Campos descobertos: []
+2026-05-14 18:43:20,882 [WARNING] ProdutividadeScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 18:43:20,889 [ERROR] ProdutividadeScraper -- Nenhum parlamentar encontrado.
+2026-05-14 18:43:20,892 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 18:43:20,943 [INFO] transformer -- Salvo: data/produtividade.parquet (0 registros)
+2026-05-14 18:43:21,006 [INFO] ProposicaoScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar_proposicao/
+2026-05-14 18:43:22,772 [INFO] ProposicaoScraper -- sc_init (input hidden): 996
+2026-05-14 18:43:24,047 [INFO] ProposicaoScraper -- Campos descobertos: []
+2026-05-14 18:43:24,048 [WARNING] ProposicaoScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 18:43:24,049 [ERROR] ProposicaoScraper -- Nenhum parlamentar encontrado.
+2026-05-14 18:43:24,050 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 18:43:24,078 [INFO] transformer -- Salvo: data/proposicoes.parquet (0 registros)
+2026-05-14 18:43:25,648 [INFO] transformer -- Pipeline concluido: {'vereadores': 'ok (43 registros)', 'frequencia': 'ok (0 registros)', 'produtividade': 'ok (0 registros)', 'proposicoes': 'ok (0 registros)'}
+2026-05-14 18:49:00,105 [INFO] VereadorScraper -- Coletando vereadores: https://www.cms.ba.gov.br/vereadores
+2026-05-14 18:49:01,840 [INFO] VereadorScraper -- VereadorScraper: 43 vereadores
+2026-05-14 18:49:01,885 [INFO] transformer -- Salvo: data/vereadores.parquet (43 registros)
+2026-05-14 18:49:01,891 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 18:49:02,610 [INFO] FrequenciaScraper -- sc_init (regex fallback): 6815
+2026-05-14 18:49:03,090 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 18:49:03,535 [INFO] FrequenciaScraper -- Meses disponiveis: 81
+2026-05-14 18:49:03,536 [INFO] FrequenciaScraper -- [1/81] Mes: 2026-04
+2026-05-14 18:49:03,710 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.17s | 73850 chars
+2026-05-14 18:49:05,796 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:05,945 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60314 chars
+2026-05-14 18:49:09,533 [INFO] FrequenciaScraper -- [2/81] Mes: 2026-03
+2026-05-14 18:49:09,977 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.44s | 76399 chars
+2026-05-14 18:49:12,364 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:12,640 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60323 chars
+2026-05-14 18:49:17,245 [INFO] FrequenciaScraper -- [3/81] Mes: 2026-02
+2026-05-14 18:49:17,555 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 71222 chars
+2026-05-14 18:49:20,364 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:20,517 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60280 chars
+2026-05-14 18:49:23,825 [INFO] FrequenciaScraper -- [4/81] Mes: 2025-12
+2026-05-14 18:49:24,110 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 73205 chars
+2026-05-14 18:49:28,684 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:28,923 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60313 chars
+2026-05-14 18:49:32,646 [INFO] FrequenciaScraper -- [5/81] Mes: 2025-11
+2026-05-14 18:49:32,916 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 75156 chars
+2026-05-14 18:49:35,268 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:35,475 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60332 chars
+2026-05-14 18:49:38,529 [INFO] FrequenciaScraper -- [6/81] Mes: 2025-10
+2026-05-14 18:49:38,724 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 73851 chars
+2026-05-14 18:49:41,631 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:41,790 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60315 chars
+2026-05-14 18:49:44,495 [INFO] FrequenciaScraper -- [7/81] Mes: 2025-09
+2026-05-14 18:49:44,793 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 77717 chars
+2026-05-14 18:49:46,817 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:47,048 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60317 chars
+2026-05-14 18:49:50,174 [INFO] FrequenciaScraper -- [8/81] Mes: 2025-08
+2026-05-14 18:49:50,531 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.36s | 74510 chars
+2026-05-14 18:49:52,901 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:49:53,054 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60330 chars
+2026-05-14 18:49:57,863 [INFO] FrequenciaScraper -- [9/81] Mes: 2025-06
+2026-05-14 18:49:58,412 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.55s | 73852 chars
+2026-05-14 18:50:01,484 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:01,688 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60316 chars
+2026-05-14 18:50:04,493 [INFO] FrequenciaScraper -- [10/81] Mes: 2025-05
+2026-05-14 18:50:04,762 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 76892 chars
+2026-05-14 18:50:09,323 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:09,787 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.46s | 60311 chars
+2026-05-14 18:50:12,179 [INFO] FrequenciaScraper -- [11/81] Mes: 2025-04
+2026-05-14 18:50:12,487 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 76433 chars
+2026-05-14 18:50:15,590 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:15,745 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60321 chars
+2026-05-14 18:50:20,406 [INFO] FrequenciaScraper -- [12/81] Mes: 2025-03
+2026-05-14 18:50:20,604 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 75782 chars
+2026-05-14 18:50:23,484 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:23,634 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60320 chars
+2026-05-14 18:50:26,635 [INFO] FrequenciaScraper -- [13/81] Mes: 2025-02
+2026-05-14 18:50:26,839 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 77485 chars
+2026-05-14 18:50:31,725 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:32,001 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.28s | 60283 chars
+2026-05-14 18:50:35,730 [INFO] FrequenciaScraper -- [14/81] Mes: 2025-01
+2026-05-14 18:50:35,996 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 68546 chars
+2026-05-14 18:50:39,419 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:39,682 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60493 chars
+2026-05-14 18:50:44,037 [INFO] FrequenciaScraper -- [15/81] Mes: 2024-12
+2026-05-14 18:50:44,260 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 73214 chars
+2026-05-14 18:50:48,584 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:48,898 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.31s | 60322 chars
+2026-05-14 18:50:53,765 [INFO] FrequenciaScraper -- [16/81] Mes: 2024-11
+2026-05-14 18:50:54,016 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 73233 chars
+2026-05-14 18:50:57,772 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:50:57,935 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60341 chars
+2026-05-14 18:51:00,454 [INFO] FrequenciaScraper -- [17/81] Mes: 2024-10
+2026-05-14 18:51:00,678 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 74505 chars
+2026-05-14 18:51:03,623 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:03,790 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60325 chars
+2026-05-14 18:51:06,640 [INFO] FrequenciaScraper -- [18/81] Mes: 2024-09
+2026-05-14 18:51:06,923 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 70638 chars
+2026-05-14 18:51:11,044 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:11,249 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60322 chars
+2026-05-14 18:51:15,945 [INFO] FrequenciaScraper -- [19/81] Mes: 2024-08
+2026-05-14 18:51:16,175 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 71926 chars
+2026-05-14 18:51:19,792 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:20,025 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60322 chars
+2026-05-14 18:51:24,260 [INFO] FrequenciaScraper -- [20/81] Mes: 2024-06
+2026-05-14 18:51:24,634 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.37s | 74501 chars
+2026-05-14 18:51:28,121 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:28,317 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60321 chars
+2026-05-14 18:51:32,060 [INFO] FrequenciaScraper -- [21/81] Mes: 2024-05
+2026-05-14 18:51:32,316 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 74500 chars
+2026-05-14 18:51:36,755 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:37,027 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60320 chars
+2026-05-14 18:51:41,150 [INFO] FrequenciaScraper -- [22/81] Mes: 2024-04
+2026-05-14 18:51:41,357 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 76433 chars
+2026-05-14 18:51:43,970 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:44,126 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60321 chars
+2026-05-14 18:51:46,465 [INFO] FrequenciaScraper -- [23/81] Mes: 2024-03
+2026-05-14 18:51:46,657 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 74484 chars
+2026-05-14 18:51:50,049 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:50,235 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60328 chars
+2026-05-14 18:51:53,362 [INFO] FrequenciaScraper -- [24/81] Mes: 2024-02
+2026-05-14 18:51:53,623 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 75575 chars
+2026-05-14 18:51:56,000 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:51:56,279 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.28s | 60287 chars
+2026-05-14 18:51:58,763 [INFO] FrequenciaScraper -- [25/81] Mes: 2023-12
+2026-05-14 18:51:59,042 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 73218 chars
+2026-05-14 18:52:01,055 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:01,234 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60326 chars
+2026-05-14 18:52:03,284 [INFO] FrequenciaScraper -- [26/81] Mes: 2023-11
+2026-05-14 18:52:03,476 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 75793 chars
+2026-05-14 18:52:08,254 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:08,565 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.31s | 60325 chars
+2026-05-14 18:52:11,763 [INFO] FrequenciaScraper -- [27/81] Mes: 2023-10
+2026-05-14 18:52:15,018 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 3.25s | 75199 chars
+2026-05-14 18:52:17,961 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:18,190 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60369 chars
+2026-05-14 18:52:21,964 [INFO] FrequenciaScraper -- [28/81] Mes: 2023-09
+2026-05-14 18:52:22,287 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 75154 chars
+2026-05-14 18:52:24,656 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:24,805 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60330 chars
+2026-05-14 18:52:28,594 [INFO] FrequenciaScraper -- [29/81] Mes: 2023-08
+2026-05-14 18:52:28,783 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 77727 chars
+2026-05-14 18:52:31,504 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:31,670 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60327 chars
+2026-05-14 18:52:36,122 [INFO] FrequenciaScraper -- [30/81] Mes: 2023-06
+2026-05-14 18:52:36,417 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 73862 chars
+2026-05-14 18:52:40,557 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:40,701 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.14s | 60326 chars
+2026-05-14 18:52:43,202 [INFO] FrequenciaScraper -- [31/81] Mes: 2023-05
+2026-05-14 18:52:43,409 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 77079 chars
+2026-05-14 18:52:47,713 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:47,869 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60323 chars
+2026-05-14 18:52:51,856 [INFO] FrequenciaScraper -- [32/81] Mes: 2023-04
+2026-05-14 18:52:52,053 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 75161 chars
+2026-05-14 18:52:55,291 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:52:55,567 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60337 chars
+2026-05-14 18:52:57,656 [INFO] FrequenciaScraper -- [33/81] Mes: 2023-03
+2026-05-14 18:52:57,893 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 75782 chars
+2026-05-14 18:53:02,715 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:03,353 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.64s | 60332 chars
+2026-05-14 18:53:05,956 [INFO] FrequenciaScraper -- [34/81] Mes: 2023-02
+2026-05-14 18:53:06,226 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 75495 chars
+2026-05-14 18:53:09,327 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:09,597 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60284 chars
+2026-05-14 18:53:13,079 [INFO] FrequenciaScraper -- [35/81] Mes: 2022-12
+2026-05-14 18:53:13,278 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 71295 chars
+2026-05-14 18:53:18,045 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:18,304 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60335 chars
+2026-05-14 18:53:21,547 [INFO] FrequenciaScraper -- [36/81] Mes: 2022-11
+2026-05-14 18:53:21,888 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 74982 chars
+2026-05-14 18:53:24,543 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:24,721 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60333 chars
+2026-05-14 18:53:28,522 [INFO] FrequenciaScraper -- [37/81] Mes: 2022-10
+2026-05-14 18:53:28,749 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 68614 chars
+2026-05-14 18:53:31,966 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:32,128 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60542 chars
+2026-05-14 18:53:34,962 [INFO] FrequenciaScraper -- [38/81] Mes: 2022-08
+2026-05-14 18:53:35,200 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 70637 chars
+2026-05-14 18:53:39,866 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:40,115 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60321 chars
+2026-05-14 18:53:42,418 [INFO] FrequenciaScraper -- [39/81] Mes: 2022-07
+2026-05-14 18:53:42,601 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 68585 chars
+2026-05-14 18:53:47,026 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:47,355 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.33s | 60506 chars
+2026-05-14 18:53:50,564 [INFO] VereadorScraper -- Coletando vereadores: https://www.cms.ba.gov.br/vereadores
+2026-05-14 18:53:51,863 [INFO] FrequenciaScraper -- [40/81] Mes: 2022-06
+2026-05-14 18:53:52,101 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 70643 chars
+2026-05-14 18:53:52,432 [INFO] VereadorScraper -- VereadorScraper: 43 vereadores
+2026-05-14 18:53:52,519 [INFO] transformer -- Salvo: data/vereadores.parquet (43 registros)
+2026-05-14 18:53:52,532 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 18:53:53,452 [INFO] FrequenciaScraper -- sc_init (regex fallback): 5327
+2026-05-14 18:53:54,102 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 18:53:54,603 [INFO] FrequenciaScraper -- Meses disponiveis: 81
+2026-05-14 18:53:54,604 [INFO] FrequenciaScraper -- [1/81] Mes: 2026-04
+2026-05-14 18:53:54,967 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.36s | 73850 chars
+2026-05-14 18:53:55,906 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:56,282 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.37s | 60327 chars
+2026-05-14 18:53:58,015 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:53:58,184 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60314 chars
+2026-05-14 18:53:59,883 [INFO] FrequenciaScraper -- [41/81] Mes: 2022-05
+2026-05-14 18:54:00,186 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 71934 chars
+2026-05-14 18:54:02,097 [INFO] FrequenciaScraper -- [2/81] Mes: 2026-03
+2026-05-14 18:54:02,339 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 76399 chars
+2026-05-14 18:54:02,972 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:03,213 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60336 chars
+2026-05-14 18:54:06,466 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:06,739 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60323 chars
+2026-05-14 18:54:07,645 [INFO] FrequenciaScraper -- [42/81] Mes: 2022-04
+2026-05-14 18:54:07,858 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 68576 chars
+2026-05-14 18:54:10,712 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:10,861 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60507 chars
+2026-05-14 18:54:11,056 [INFO] FrequenciaScraper -- [3/81] Mes: 2026-02
+2026-05-14 18:54:11,352 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 71222 chars
+2026-05-14 18:54:13,828 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:14,039 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60280 chars
+2026-05-14 18:54:14,584 [INFO] FrequenciaScraper -- [43/81] Mes: 2022-03
+2026-05-14 18:54:14,830 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 74878 chars
+2026-05-14 18:54:17,689 [INFO] FrequenciaScraper -- [4/81] Mes: 2025-12
+2026-05-14 18:54:17,902 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 73205 chars
+2026-05-14 18:54:19,407 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:19,641 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60305 chars
+2026-05-14 18:54:22,276 [INFO] FrequenciaScraper -- [44/81] Mes: 2022-02
+2026-05-14 18:54:22,508 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 73601 chars
+2026-05-14 18:54:22,558 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:25,787 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 3.23s | 60313 chars
+2026-05-14 18:54:26,835 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:27,014 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60304 chars
+2026-05-14 18:54:28,298 [INFO] FrequenciaScraper -- [5/81] Mes: 2025-11
+2026-05-14 18:54:28,552 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 75156 chars
+2026-05-14 18:54:32,013 [INFO] FrequenciaScraper -- [45/81] Mes: 2021-12
+2026-05-14 18:54:32,218 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 74351 chars
+2026-05-14 18:54:33,547 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:33,753 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60332 chars
+2026-05-14 18:54:36,614 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:36,816 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60346 chars
+2026-05-14 18:54:38,073 [INFO] FrequenciaScraper -- [6/81] Mes: 2025-10
+2026-05-14 18:54:38,389 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 73851 chars
+2026-05-14 18:54:40,663 [INFO] FrequenciaScraper -- [46/81] Mes: 2021-11
+2026-05-14 18:54:40,887 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 73238 chars
+2026-05-14 18:54:43,135 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:43,374 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60315 chars
+2026-05-14 18:54:43,806 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:43,993 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60346 chars
+2026-05-14 18:54:46,595 [INFO] FrequenciaScraper -- [7/81] Mes: 2025-09
+2026-05-14 18:54:46,797 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 77717 chars
+2026-05-14 18:54:46,879 [INFO] FrequenciaScraper -- [47/81] Mes: 2021-10
+2026-05-14 18:54:47,062 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 73879 chars
+2026-05-14 18:54:48,812 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:48,966 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60317 chars
+2026-05-14 18:54:52,018 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:52,203 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60343 chars
+2026-05-14 18:54:52,835 [INFO] FrequenciaScraper -- [8/81] Mes: 2025-08
+2026-05-14 18:54:53,125 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 74510 chars
+2026-05-14 18:54:54,297 [INFO] FrequenciaScraper -- [48/81] Mes: 2021-09
+2026-05-14 18:54:54,506 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 72596 chars
+2026-05-14 18:54:57,145 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:57,408 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60330 chars
+2026-05-14 18:54:57,420 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:54:57,638 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60348 chars
+2026-05-14 18:54:59,629 [INFO] FrequenciaScraper -- [9/81] Mes: 2025-06
+2026-05-14 18:54:59,987 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.36s | 73852 chars
+2026-05-14 18:55:00,787 [INFO] FrequenciaScraper -- [49/81] Mes: 2021-08
+2026-05-14 18:55:01,130 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 73884 chars
+2026-05-14 18:55:04,891 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:05,077 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60316 chars
+2026-05-14 18:55:05,675 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:05,823 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60348 chars
+2026-05-14 18:55:08,106 [INFO] FrequenciaScraper -- [50/81] Mes: 2021-07
+2026-05-14 18:55:08,410 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 68640 chars
+2026-05-14 18:55:09,959 [INFO] FrequenciaScraper -- [10/81] Mes: 2025-05
+2026-05-14 18:55:10,329 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.37s | 76892 chars
+2026-05-14 18:55:10,527 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:10,704 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60568 chars
+2026-05-14 18:55:13,824 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:14,097 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60311 chars
+2026-05-14 18:55:14,650 [INFO] FrequenciaScraper -- [51/81] Mes: 2021-06
+2026-05-14 18:55:14,989 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 70652 chars
+2026-05-14 18:55:17,629 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:17,840 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60336 chars
+2026-05-14 18:55:18,207 [INFO] FrequenciaScraper -- [11/81] Mes: 2025-04
+2026-05-14 18:55:18,453 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 76433 chars
+2026-05-14 18:55:21,932 [INFO] FrequenciaScraper -- [52/81] Mes: 2021-05
+2026-05-14 18:55:22,127 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 72590 chars
+2026-05-14 18:55:22,621 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:22,790 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60321 chars
+2026-05-14 18:55:24,780 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:24,954 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60342 chars
+2026-05-14 18:55:26,055 [INFO] FrequenciaScraper -- [12/81] Mes: 2025-03
+2026-05-14 18:55:26,267 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 75782 chars
+2026-05-14 18:55:29,598 [INFO] FrequenciaScraper -- [53/81] Mes: 2021-04
+2026-05-14 18:55:29,822 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 73228 chars
+2026-05-14 18:55:30,039 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:30,338 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.30s | 60320 chars
+2026-05-14 18:55:32,750 [INFO] FrequenciaScraper -- [13/81] Mes: 2025-02
+2026-05-14 18:55:32,972 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 77485 chars
+2026-05-14 18:55:34,531 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:34,709 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60342 chars
+2026-05-14 18:55:36,104 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:36,269 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60283 chars
+2026-05-14 18:55:38,101 [INFO] FrequenciaScraper -- [54/81] Mes: 2021-03
+2026-05-14 18:55:38,350 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 74295 chars
+2026-05-14 18:55:39,415 [INFO] FrequenciaScraper -- [14/81] Mes: 2025-01
+2026-05-14 18:55:39,608 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 68546 chars
+2026-05-14 18:55:41,954 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:42,295 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.34s | 60308 chars
+2026-05-14 18:55:43,034 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:43,368 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.33s | 60493 chars
+2026-05-14 18:55:45,684 [INFO] FrequenciaScraper -- [15/81] Mes: 2024-12
+2026-05-14 18:55:45,847 [INFO] FrequenciaScraper -- [55/81] Mes: 2021-02
+2026-05-14 18:55:46,232 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.55s | 73214 chars
+2026-05-14 18:55:46,232 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.38s | 72526 chars
+2026-05-14 18:55:49,795 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:50,100 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.30s | 60308 chars
+2026-05-14 18:55:50,224 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:50,584 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.28s | 60322 chars
+2026-05-14 18:55:53,211 [INFO] FrequenciaScraper -- [16/81] Mes: 2024-11
+2026-05-14 18:55:53,454 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 73233 chars
+2026-05-14 18:55:55,085 [INFO] FrequenciaScraper -- [56/81] Mes: 2020-12
+2026-05-14 18:55:55,321 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 70584 chars
+2026-05-14 18:55:57,083 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:57,288 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60341 chars
+2026-05-14 18:55:58,217 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:55:58,382 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60268 chars
+2026-05-14 18:56:01,002 [INFO] FrequenciaScraper -- [17/81] Mes: 2024-10
+2026-05-14 18:56:01,277 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 74505 chars
+2026-05-14 18:56:02,753 [INFO] FrequenciaScraper -- [57/81] Mes: 2020-10
+2026-05-14 18:56:02,964 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 68558 chars
+2026-05-14 18:56:05,070 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:05,313 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60325 chars
+2026-05-14 18:56:07,131 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:07,337 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60486 chars
+2026-05-14 18:56:08,762 [INFO] FrequenciaScraper -- [18/81] Mes: 2024-09
+2026-05-14 18:56:09,030 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 70638 chars
+2026-05-14 18:56:11,058 [INFO] FrequenciaScraper -- [58/81] Mes: 2020-09
+2026-05-14 18:56:11,262 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 71889 chars
+2026-05-14 18:56:12,318 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:12,554 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60322 chars
+2026-05-14 18:56:13,867 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:14,056 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60285 chars
+2026-05-14 18:56:15,004 [INFO] FrequenciaScraper -- [19/81] Mes: 2024-08
+2026-05-14 18:56:15,357 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 71926 chars
+2026-05-14 18:56:16,072 [INFO] FrequenciaScraper -- [59/81] Mes: 2020-08
+2026-05-14 18:56:16,558 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.48s | 71238 chars
+2026-05-14 18:56:18,627 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:18,976 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.35s | 60322 chars
+2026-05-14 18:56:21,288 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:21,476 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60278 chars
+2026-05-14 18:56:21,714 [INFO] FrequenciaScraper -- [20/81] Mes: 2024-06
+2026-05-14 18:56:21,900 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 74501 chars
+2026-05-14 18:56:24,327 [INFO] FrequenciaScraper -- [60/81] Mes: 2020-07
+2026-05-14 18:56:24,512 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 70593 chars
+2026-05-14 18:56:26,137 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:26,298 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60321 chars
+2026-05-14 18:56:28,486 [INFO] FrequenciaScraper -- [21/81] Mes: 2024-05
+2026-05-14 18:56:28,667 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 74500 chars
+2026-05-14 18:56:28,911 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:29,089 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60277 chars
+2026-05-14 18:56:31,150 [INFO] FrequenciaScraper -- [61/81] Mes: 2020-06
+2026-05-14 18:56:31,434 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 74284 chars
+2026-05-14 18:56:33,594 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:33,795 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60320 chars
+2026-05-14 18:56:35,993 [INFO] FrequenciaScraper -- [22/81] Mes: 2024-04
+2026-05-14 18:56:36,243 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 76433 chars
+2026-05-14 18:56:36,317 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:36,469 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60279 chars
+2026-05-14 18:56:38,750 [INFO] FrequenciaScraper -- [62/81] Mes: 2020-05
+2026-05-14 18:56:39,010 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 70594 chars
+2026-05-14 18:56:39,668 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:39,859 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60321 chars
+2026-05-14 18:56:42,897 [INFO] FrequenciaScraper -- [23/81] Mes: 2024-03
+2026-05-14 18:56:43,104 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 74484 chars
+2026-05-14 18:56:43,366 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:43,544 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60278 chars
+2026-05-14 18:56:45,439 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:45,664 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60328 chars
+2026-05-14 18:56:46,732 [INFO] FrequenciaScraper -- [63/81] Mes: 2020-04
+2026-05-14 18:56:46,996 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 72999 chars
+2026-05-14 18:56:50,561 [INFO] FrequenciaScraper -- [24/81] Mes: 2024-02
+2026-05-14 18:56:51,195 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.63s | 75575 chars
+2026-05-14 18:56:51,602 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:51,810 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60282 chars
+2026-05-14 18:56:54,959 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:55,185 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60287 chars
+2026-05-14 18:56:56,611 [INFO] FrequenciaScraper -- [64/81] Mes: 2020-03
+2026-05-14 18:56:56,807 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 75747 chars
+2026-05-14 18:56:58,733 [INFO] FrequenciaScraper -- [25/81] Mes: 2023-12
+2026-05-14 18:56:58,975 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 73218 chars
+2026-05-14 18:56:59,063 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:56:59,241 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60285 chars
+2026-05-14 18:57:01,980 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:02,253 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60326 chars
+2026-05-14 18:57:03,461 [INFO] FrequenciaScraper -- [65/81] Mes: 2020-02
+2026-05-14 18:57:03,657 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 76731 chars
+2026-05-14 18:57:07,061 [INFO] FrequenciaScraper -- [26/81] Mes: 2023-11
+2026-05-14 18:57:07,274 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 75793 chars
+2026-05-14 18:57:07,496 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:07,784 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.29s | 60244 chars
+2026-05-14 18:57:09,362 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:09,575 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60325 chars
+2026-05-14 18:57:11,541 [INFO] FrequenciaScraper -- [66/81] Mes: 2019-12
+2026-05-14 18:57:11,844 [INFO] FrequenciaScraper -- [27/81] Mes: 2023-10
+2026-05-14 18:57:11,878 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 75207 chars
+2026-05-14 18:57:12,084 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 75199 chars
+2026-05-14 18:57:15,875 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:16,077 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60369 chars
+2026-05-14 18:57:16,869 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:17,204 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.33s | 60329 chars
+2026-05-14 18:57:19,306 [INFO] FrequenciaScraper -- [67/81] Mes: 2019-11
+2026-05-14 18:57:19,470 [INFO] FrequenciaScraper -- [28/81] Mes: 2023-09
+2026-05-14 18:57:19,572 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 76507 chars
+2026-05-14 18:57:19,689 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 75154 chars
+2026-05-14 18:57:21,990 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:22,219 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60330 chars
+2026-05-14 18:57:23,065 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:23,235 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60335 chars
+2026-05-14 18:57:25,758 [INFO] FrequenciaScraper -- [29/81] Mes: 2023-08
+2026-05-14 18:57:26,112 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 77727 chars
+2026-05-14 18:57:27,220 [INFO] FrequenciaScraper -- [68/81] Mes: 2019-10
+2026-05-14 18:57:27,444 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 77685 chars
+2026-05-14 18:57:29,494 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:29,688 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60327 chars
+2026-05-14 18:57:31,828 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:32,050 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60285 chars
+2026-05-14 18:57:33,446 [INFO] FrequenciaScraper -- [30/81] Mes: 2023-06
+2026-05-14 18:57:33,663 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 73862 chars
+2026-05-14 18:57:36,549 [INFO] FrequenciaScraper -- [69/81] Mes: 2019-09
+2026-05-14 18:57:36,863 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 77686 chars
+2026-05-14 18:57:36,986 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:37,272 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.29s | 60326 chars
+2026-05-14 18:57:38,951 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:39,217 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60286 chars
+2026-05-14 18:57:39,654 [INFO] FrequenciaScraper -- [31/81] Mes: 2023-05
+2026-05-14 18:57:39,846 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 77079 chars
+2026-05-14 18:57:42,751 [INFO] FrequenciaScraper -- [70/81] Mes: 2019-08
+2026-05-14 18:57:43,009 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 77042 chars
+2026-05-14 18:57:43,960 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:44,157 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60323 chars
+2026-05-14 18:57:47,222 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:47,411 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60286 chars
+2026-05-14 18:57:48,895 [INFO] FrequenciaScraper -- [32/81] Mes: 2023-04
+2026-05-14 18:57:49,356 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.46s | 75161 chars
+2026-05-14 18:57:52,390 [INFO] FrequenciaScraper -- [71/81] Mes: 2019-07
+2026-05-14 18:57:52,479 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:52,602 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 72542 chars
+2026-05-14 18:57:52,632 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60337 chars
+2026-05-14 18:57:55,527 [INFO] FrequenciaScraper -- [33/81] Mes: 2023-03
+2026-05-14 18:57:55,543 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:55,811 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.27s | 60294 chars
+2026-05-14 18:57:55,811 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 75782 chars
+2026-05-14 18:57:58,426 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:57:58,862 [INFO] FrequenciaScraper -- [72/81] Mes: 2019-06
+2026-05-14 18:57:59,056 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 74465 chars
+2026-05-14 18:58:01,626 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 3.20s | 60332 chars
+2026-05-14 18:58:02,107 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:03,180 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 1.07s | 60285 chars
+2026-05-14 18:58:04,658 [INFO] FrequenciaScraper -- [34/81] Mes: 2023-02
+2026-05-14 18:58:04,862 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 75495 chars
+2026-05-14 18:58:08,055 [INFO] FrequenciaScraper -- [73/81] Mes: 2019-05
+2026-05-14 18:58:08,505 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.45s | 77036 chars
+2026-05-14 18:58:08,596 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:08,835 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60284 chars
+2026-05-14 18:58:11,241 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:11,475 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.23s | 60280 chars
+2026-05-14 18:58:12,205 [INFO] FrequenciaScraper -- [35/81] Mes: 2022-12
+2026-05-14 18:58:12,500 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 71295 chars
+2026-05-14 18:58:13,921 [INFO] FrequenciaScraper -- [74/81] Mes: 2019-04
+2026-05-14 18:58:14,139 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 78977 chars
+2026-05-14 18:58:15,985 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:16,154 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60335 chars
+2026-05-14 18:58:18,653 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:18,825 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60283 chars
+2026-05-14 18:58:20,824 [INFO] FrequenciaScraper -- [36/81] Mes: 2022-11
+2026-05-14 18:58:20,912 [INFO] FrequenciaScraper -- [75/81] Mes: 2019-03
+2026-05-14 18:58:21,028 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 74982 chars
+2026-05-14 18:58:21,104 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 82876 chars
+2026-05-14 18:58:25,005 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:25,197 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60333 chars
+2026-05-14 18:58:25,726 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:25,883 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60318 chars
+2026-05-14 18:58:28,631 [INFO] FrequenciaScraper -- [76/81] Mes: 2019-02
+2026-05-14 18:58:28,883 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 75698 chars
+2026-05-14 18:58:30,170 [INFO] FrequenciaScraper -- [37/81] Mes: 2022-10
+2026-05-14 18:58:30,420 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 68614 chars
+2026-05-14 18:58:33,466 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:33,621 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60284 chars
+2026-05-14 18:58:35,405 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:35,567 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60542 chars
+2026-05-14 18:58:37,698 [INFO] FrequenciaScraper -- [77/81] Mes: 2018-12
+2026-05-14 18:58:37,945 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 71882 chars
+2026-05-14 18:58:40,481 [INFO] FrequenciaScraper -- [38/81] Mes: 2022-08
+2026-05-14 18:58:40,762 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 70637 chars
+2026-05-14 18:58:42,737 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:42,885 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60278 chars
+2026-05-14 18:58:44,915 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:45,064 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60321 chars
+2026-05-14 18:58:46,873 [INFO] FrequenciaScraper -- [78/81] Mes: 2018-11
+2026-05-14 18:58:47,114 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 71890 chars
+2026-05-14 18:58:49,072 [INFO] FrequenciaScraper -- [39/81] Mes: 2022-07
+2026-05-14 18:58:49,365 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 68585 chars
+2026-05-14 18:58:50,868 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:51,017 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60286 chars
+2026-05-14 18:58:52,378 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:52,847 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.47s | 60506 chars
+2026-05-14 18:58:53,168 [INFO] FrequenciaScraper -- [79/81] Mes: 2018-10
+2026-05-14 18:58:53,466 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 75732 chars
+2026-05-14 18:58:55,055 [INFO] FrequenciaScraper -- [40/81] Mes: 2022-06
+2026-05-14 18:58:55,383 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.33s | 70643 chars
+2026-05-14 18:58:57,640 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:57,787 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60327 chars
+2026-05-14 18:58:57,950 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:58:58,111 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60264 chars
+2026-05-14 18:59:00,680 [INFO] FrequenciaScraper -- [41/81] Mes: 2022-05
+2026-05-14 18:59:00,937 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.26s | 71934 chars
+2026-05-14 18:59:01,135 [INFO] FrequenciaScraper -- [80/81] Mes: 2018-09
+2026-05-14 18:59:01,347 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 16203 chars
+2026-05-14 18:59:04,930 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:05,056 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.13s | 8131 chars
+2026-05-14 18:59:05,638 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:05,795 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60336 chars
+2026-05-14 18:59:07,458 [INFO] FrequenciaScraper -- [81/81] Mes: 2018-05
+2026-05-14 18:59:07,615 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.16s | 16199 chars
+2026-05-14 18:59:08,418 [INFO] FrequenciaScraper -- [42/81] Mes: 2022-04
+2026-05-14 18:59:08,603 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 68576 chars
+2026-05-14 18:59:10,012 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:10,151 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.14s | 8127 chars
+2026-05-14 18:59:11,086 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:11,252 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60507 chars
+2026-05-14 18:59:13,864 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
+2026-05-14 18:59:13,868 [WARNING] transformer -- transform_frequencia: lista vazia recebida
+2026-05-14 18:59:13,904 [INFO] transformer -- Salvo: data/frequencia.parquet (0 registros)
+2026-05-14 18:59:13,980 [INFO] ProdutividadeScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar/
+2026-05-14 18:59:14,428 [INFO] FrequenciaScraper -- [43/81] Mes: 2022-03
+2026-05-14 18:59:14,765 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.34s | 74878 chars
+2026-05-14 18:59:14,900 [INFO] ProdutividadeScraper -- sc_init (input hidden): 7445
+2026-05-14 18:59:15,652 [INFO] ProdutividadeScraper -- Campos descobertos: []
+2026-05-14 18:59:15,652 [WARNING] ProdutividadeScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 18:59:15,653 [ERROR] ProdutividadeScraper -- Nenhum parlamentar encontrado.
+2026-05-14 18:59:15,654 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 18:59:15,663 [INFO] transformer -- Salvo: data/produtividade.parquet (0 registros)
+2026-05-14 18:59:15,685 [INFO] ProposicaoScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar_proposicao/
+2026-05-14 18:59:17,022 [INFO] ProposicaoScraper -- sc_init (input hidden): 6293
+2026-05-14 18:59:17,773 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:17,974 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60305 chars
+2026-05-14 18:59:21,144 [INFO] ProposicaoScraper -- Campos descobertos: []
+2026-05-14 18:59:21,145 [WARNING] ProposicaoScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 18:59:21,146 [ERROR] ProposicaoScraper -- Nenhum parlamentar encontrado.
+2026-05-14 18:59:21,147 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 18:59:21,162 [INFO] transformer -- Salvo: data/proposicoes.parquet (0 registros)
+2026-05-14 18:59:21,225 [INFO] transformer -- Pipeline concluido: {'vereadores': 'ok (43 registros)', 'frequencia': 'ok (0 registros)', 'produtividade': 'ok (0 registros)', 'proposicoes': 'ok (0 registros)'}
+2026-05-14 18:59:22,716 [INFO] FrequenciaScraper -- [44/81] Mes: 2022-02
+2026-05-14 18:59:22,952 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 73601 chars
+2026-05-14 18:59:25,604 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:25,818 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.21s | 60304 chars
+2026-05-14 18:59:30,362 [INFO] FrequenciaScraper -- [45/81] Mes: 2021-12
+2026-05-14 18:59:30,634 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.27s | 74351 chars
+2026-05-14 18:59:34,848 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:35,010 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60346 chars
+2026-05-14 18:59:38,703 [INFO] FrequenciaScraper -- [46/81] Mes: 2021-11
+2026-05-14 18:59:39,027 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 73238 chars
+2026-05-14 18:59:42,654 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:42,810 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60346 chars
+2026-05-14 18:59:45,038 [INFO] FrequenciaScraper -- [47/81] Mes: 2021-10
+2026-05-14 18:59:45,277 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 73879 chars
+2026-05-14 18:59:48,393 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:48,653 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.26s | 60343 chars
+2026-05-14 18:59:51,565 [INFO] FrequenciaScraper -- [48/81] Mes: 2021-09
+2026-05-14 18:59:51,846 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 72596 chars
+2026-05-14 18:59:55,018 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 18:59:55,184 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60348 chars
+2026-05-14 18:59:57,265 [INFO] FrequenciaScraper -- [49/81] Mes: 2021-08
+2026-05-14 18:59:57,564 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 73884 chars
+2026-05-14 19:00:01,230 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:01,453 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60348 chars
+2026-05-14 19:00:04,436 [INFO] FrequenciaScraper -- [50/81] Mes: 2021-07
+2026-05-14 19:00:05,074 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.64s | 68640 chars
+2026-05-14 19:00:07,880 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:08,025 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.14s | 60568 chars
+2026-05-14 19:00:12,276 [INFO] FrequenciaScraper -- [51/81] Mes: 2021-06
+2026-05-14 19:00:12,513 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 70652 chars
+2026-05-14 19:00:14,845 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:15,000 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60336 chars
+2026-05-14 19:00:19,286 [INFO] FrequenciaScraper -- [52/81] Mes: 2021-05
+2026-05-14 19:00:19,592 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.30s | 72590 chars
+2026-05-14 19:00:21,823 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:22,141 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.32s | 60342 chars
+2026-05-14 19:00:26,014 [INFO] FrequenciaScraper -- [53/81] Mes: 2021-04
+2026-05-14 19:00:26,339 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.32s | 73228 chars
+2026-05-14 19:00:30,799 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:30,979 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.18s | 60342 chars
+2026-05-14 19:00:35,225 [INFO] FrequenciaScraper -- [54/81] Mes: 2021-03
+2026-05-14 19:00:35,471 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 74295 chars
+2026-05-14 19:00:38,761 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:38,934 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60308 chars
+2026-05-14 19:00:43,915 [INFO] FrequenciaScraper -- [55/81] Mes: 2021-02
+2026-05-14 19:00:44,363 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.45s | 72526 chars
+2026-05-14 19:00:47,552 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:47,702 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60308 chars
+2026-05-14 19:00:50,345 [INFO] FrequenciaScraper -- [56/81] Mes: 2020-12
+2026-05-14 19:00:50,555 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 70584 chars
+2026-05-14 19:00:55,059 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:00:55,210 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60268 chars
+2026-05-14 19:00:58,719 [INFO] FrequenciaScraper -- [57/81] Mes: 2020-10
+2026-05-14 19:00:59,067 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.35s | 68558 chars
+2026-05-14 19:01:01,181 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:01,323 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.14s | 60486 chars
+2026-05-14 19:01:06,233 [INFO] FrequenciaScraper -- [58/81] Mes: 2020-09
+2026-05-14 19:01:06,462 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 71889 chars
+2026-05-14 19:01:11,011 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:11,301 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.29s | 60285 chars
+2026-05-14 19:01:13,981 [INFO] FrequenciaScraper -- [59/81] Mes: 2020-08
+2026-05-14 19:01:14,199 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.21s | 71238 chars
+2026-05-14 19:01:17,138 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:17,437 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.30s | 60278 chars
+2026-05-14 19:01:20,815 [INFO] FrequenciaScraper -- [60/81] Mes: 2020-07
+2026-05-14 19:01:21,122 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.31s | 70593 chars
+2026-05-14 19:01:25,780 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:28,973 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 3.19s | 60277 chars
+2026-05-14 19:01:31,183 [INFO] FrequenciaScraper -- [61/81] Mes: 2020-06
+2026-05-14 19:01:31,465 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 74284 chars
+2026-05-14 19:01:36,324 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:36,481 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60279 chars
+2026-05-14 19:01:40,417 [INFO] FrequenciaScraper -- [62/81] Mes: 2020-05
+2026-05-14 19:01:40,681 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.23s | 70594 chars
+2026-05-14 19:01:44,732 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:44,921 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60278 chars
+2026-05-14 19:01:48,573 [INFO] FrequenciaScraper -- [63/81] Mes: 2020-04
+2026-05-14 19:01:48,974 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.40s | 72999 chars
+2026-05-14 19:01:52,058 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:52,279 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.22s | 60282 chars
+2026-05-14 19:01:57,184 [INFO] FrequenciaScraper -- [64/81] Mes: 2020-03
+2026-05-14 19:01:57,378 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 75747 chars
+2026-05-14 19:01:59,486 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:01:59,637 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60285 chars
+2026-05-14 19:02:02,490 [INFO] FrequenciaScraper -- [65/81] Mes: 2020-02
+2026-05-14 19:02:02,780 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 76731 chars
+2026-05-14 19:02:04,829 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:08,046 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 3.22s | 60244 chars
+2026-05-14 19:02:10,279 [INFO] FrequenciaScraper -- [66/81] Mes: 2019-12
+2026-05-14 19:02:10,515 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 75207 chars
+2026-05-14 19:02:13,072 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:13,277 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60329 chars
+2026-05-14 19:02:17,875 [INFO] FrequenciaScraper -- [67/81] Mes: 2019-11
+2026-05-14 19:02:18,160 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 76507 chars
+2026-05-14 19:02:20,633 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:20,796 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60335 chars
+2026-05-14 19:02:25,049 [INFO] FrequenciaScraper -- [68/81] Mes: 2019-10
+2026-05-14 19:02:25,327 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 77685 chars
+2026-05-14 19:02:30,315 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:30,553 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.24s | 60285 chars
+2026-05-14 19:02:32,899 [INFO] FrequenciaScraper -- [69/81] Mes: 2019-09
+2026-05-14 19:02:33,235 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.33s | 77686 chars
+2026-05-14 19:02:35,966 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:36,293 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.33s | 60286 chars
+2026-05-14 19:02:39,271 [INFO] FrequenciaScraper -- [70/81] Mes: 2019-08
+2026-05-14 19:02:39,567 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.29s | 77042 chars
+2026-05-14 19:02:41,946 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:42,231 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.28s | 60286 chars
+2026-05-14 19:02:44,962 [INFO] FrequenciaScraper -- [71/81] Mes: 2019-07
+2026-05-14 19:02:45,200 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.24s | 72542 chars
+2026-05-14 19:02:48,384 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:48,538 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60294 chars
+2026-05-14 19:02:51,342 [INFO] FrequenciaScraper -- [72/81] Mes: 2019-06
+2026-05-14 19:02:51,527 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 74465 chars
+2026-05-14 19:02:55,957 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:02:56,132 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60285 chars
+2026-05-14 19:02:58,497 [INFO] FrequenciaScraper -- [73/81] Mes: 2019-05
+2026-05-14 19:02:58,720 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 77036 chars
+2026-05-14 19:03:03,538 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:03,689 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.15s | 60280 chars
+2026-05-14 19:03:08,262 [INFO] FrequenciaScraper -- [74/81] Mes: 2019-04
+2026-05-14 19:03:08,546 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.28s | 78977 chars
+2026-05-14 19:03:11,450 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:11,697 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.25s | 60283 chars
+2026-05-14 19:03:15,937 [INFO] FrequenciaScraper -- [75/81] Mes: 2019-03
+2026-05-14 19:03:16,193 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.25s | 82876 chars
+2026-05-14 19:03:20,362 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:20,530 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.17s | 60318 chars
+2026-05-14 19:03:24,293 [INFO] FrequenciaScraper -- [76/81] Mes: 2019-02
+2026-05-14 19:03:24,480 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 75698 chars
+2026-05-14 19:03:29,039 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:29,205 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 60284 chars
+2026-05-14 19:03:33,013 [INFO] FrequenciaScraper -- [77/81] Mes: 2018-12
+2026-05-14 19:03:36,211 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 3.20s | 71882 chars
+2026-05-14 19:03:39,801 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:40,001 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.20s | 60278 chars
+2026-05-14 19:03:43,476 [INFO] FrequenciaScraper -- [78/81] Mes: 2018-11
+2026-05-14 19:03:43,694 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.22s | 71890 chars
+2026-05-14 19:03:47,128 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:47,644 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.51s | 60286 chars
+2026-05-14 19:03:51,174 [INFO] FrequenciaScraper -- [79/81] Mes: 2018-10
+2026-05-14 19:03:51,363 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.19s | 75732 chars
+2026-05-14 19:03:56,138 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:03:56,330 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.19s | 60264 chars
+2026-05-14 19:03:58,967 [INFO] FrequenciaScraper -- [80/81] Mes: 2018-09
+2026-05-14 19:03:59,146 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.18s | 16203 chars
+2026-05-14 19:04:03,742 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:04:04,054 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.31s | 8131 chars
+2026-05-14 19:04:06,911 [INFO] FrequenciaScraper -- [81/81] Mes: 2018-05
+2026-05-14 19:04:07,115 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 16199 chars
+2026-05-14 19:04:11,657 [INFO] FrequenciaScraper -- Paginacao: 0/pag | total: 0
+2026-05-14 19:04:11,818 [INFO] FrequenciaScraper -- POST opc=nav_first | status=200 | 0.16s | 8127 chars
+2026-05-14 19:04:14,524 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
+2026-05-14 19:04:14,527 [WARNING] transformer -- transform_frequencia: lista vazia recebida
+2026-05-14 19:04:14,655 [INFO] transformer -- Salvo: data/frequencia.parquet (0 registros)
+2026-05-14 19:04:14,707 [INFO] ProdutividadeScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar/
+2026-05-14 19:04:15,790 [INFO] ProdutividadeScraper -- sc_init (input hidden): 9561
+2026-05-14 19:04:16,684 [INFO] ProdutividadeScraper -- Campos descobertos: []
+2026-05-14 19:04:16,685 [WARNING] ProdutividadeScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 19:04:16,686 [ERROR] ProdutividadeScraper -- Nenhum parlamentar encontrado.
+2026-05-14 19:04:16,687 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 19:04:16,701 [INFO] transformer -- Salvo: data/produtividade.parquet (0 registros)
+2026-05-14 19:04:16,747 [INFO] ProposicaoScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parlamentar_proposicao/
+2026-05-14 19:04:20,176 [INFO] ProposicaoScraper -- sc_init (input hidden): 2320
+2026-05-14 19:04:24,306 [INFO] ProposicaoScraper -- Campos descobertos: []
+2026-05-14 19:04:24,306 [WARNING] ProposicaoScraper -- Campo parlamentar nao descoberto -- usando FIELD_MAP
+2026-05-14 19:04:24,307 [ERROR] ProposicaoScraper -- Nenhum parlamentar encontrado.
+2026-05-14 19:04:24,308 [WARNING] transformer -- transform_produtividade: lista vazia recebida
+2026-05-14 19:04:24,314 [INFO] transformer -- Salvo: data/proposicoes.parquet (0 registros)
+2026-05-14 19:04:24,346 [INFO] transformer -- Pipeline concluido: {'vereadores': 'ok (43 registros)', 'frequencia': 'ok (0 registros)', 'produtividade': 'ok (0 registros)', 'proposicoes': 'ok (0 registros)'}
+2026-05-14 19:05:29,378 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 19:05:30,314 [INFO] FrequenciaScraper -- sc_init (regex fallback): 1721
+2026-05-14 19:05:30,315 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 19:05:31,328 [INFO] FrequenciaScraper -- sc_init (regex fallback): 4151
+2026-05-14 19:05:31,966 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 19:05:32,167 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.20s | 73850 chars
+2026-05-14 19:05:35,901 [INFO] FrequenciaScraper -- Paginacao (JSON): 44/pag | total: 43
+2026-05-14 19:05:35,902 [INFO] FrequenciaScraper -- Paginacao: 44/pag | total: 43
+2026-05-14 19:05:36,211 [INFO] FrequenciaScraper -- POST opc=nav_next | status=200 | 0.30s | 60314 chars
+2026-05-14 19:05:39,698 [INFO] FrequenciaScraper -- Paginacao: pagina vazia -- encerrando
+2026-05-14 19:05:39,698 [INFO] FrequenciaScraper -- FrequenciaScraper: 0 registros
+2026-05-14 19:09:20,916 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 19:09:21,986 [INFO] FrequenciaScraper -- sc_init (regex fallback): 318
+2026-05-14 19:09:21,986 [INFO] FrequenciaScraper -- Iniciando sessao em: http://45.4.247.157/leg/salvador/LEG_SYS_frequencia/
+2026-05-14 19:09:23,001 [INFO] FrequenciaScraper -- sc_init (regex fallback): 4716
+2026-05-14 19:09:23,515 [INFO] FrequenciaScraper -- Export CSV detectado (opc='exportar'): 0 linhas
+2026-05-14 19:09:23,946 [INFO] FrequenciaScraper -- POST opc=interativ_search | status=200 | 0.43s | 73850 chars
+2026-05-14 19:09:28,005 [INFO] FrequenciaScraper -- Paginacao (JSON): 44/pag | total: 43
+2026-05-14 19:09:28,006 [INFO] FrequenciaScraper -- Paginacao: 44/pag | total: 43
+2026-05-14 19:09:28,007 [INFO] FrequenciaScraper -- FrequenciaScraper: 43 registros
