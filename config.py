@@ -13,6 +13,10 @@ URL_PROPOSICAO    = "http://45.4.247.157/leg/salvador/LEG_SYS_produtividade_parl
 URL_COMISSAO      = "http://45.4.247.157/leg/salvador/LEG_SYS_comissao/"
 URL_VEREADORES    = "https://www.cms.ba.gov.br/vereadores"
 
+# Sistema público de proposições internas da CMS (legislatura atual).
+# Alvo independente do ScriptCase — usa HTTP GET puro.
+URL_PROP_INTERNA  = "https://cmsalvador.sys.inf.br/cl/prop_interna/"
+
 # ── Encoding ──────────────────────────────────────────────────────────────────
 # CRÍTICO: todas as páginas do IP 45.4.247.157 usam ISO-8859-1.
 # Sem definir explicitamente, nomes acentuados viram lixo binário.
@@ -89,7 +93,13 @@ DELAY_MAX      = 5.0   # segundos — máximo entre requests
 REQUEST_TIMEOUT = 30   # segundos — timeout por request
 
 # ── Cobertura de Dados ────────────────────────────────────────────────────────
-ANOS_COBERTURA = list(range(2019, 2027))
+# Foco exclusivo na legislatura atual (2025 em diante).
+# ANO_INICIO_LEGISLATURA é a constante de referência usada em todos os
+# scrapers, filtros e na sidebar para nunca processar dados históricos.
+import datetime as _dt
+ANO_ATUAL              = _dt.date.today().year
+ANO_INICIO_LEGISLATURA = 2025
+ANOS_COBERTURA         = list(range(ANO_INICIO_LEGISLATURA, ANO_ATUAL + 1))
 
 # ── Caminhos ──────────────────────────────────────────────────────────────────
 CACHE_DIR    = "data/"

@@ -4,6 +4,7 @@
 # =============================================================================
 
 import os
+import re
 import json
 import unicodedata
 import logging
@@ -176,6 +177,74 @@ def transform_vereadores(raw: list) -> pd.DataFrame:
     return result[result["nome_norm"] != ""].reset_index(drop=True)
 
 
+def transform_proposicao_interna(raw: list) -> pd.DataFrame:
+    """
+    Transforma dados crus da ProposicaoInternaScraper em DataFrame tipado.
+
+    Colunas reais confirmadas via diagnóstico (2026-05-17):
+      proposição  → numero    (ex: "PIN-210/2026")
+      autor       → autor
+      ementa      → ementa
+      movimentado → data      (data da última movimentação)
+      localização → localizacao
+      situação    → situacao
+      autor/requerente/vistas/outros → autor_doc (ignorado na exibição)
+
+    Usa correspondência por substring para tolerar variações futuras.
+    """
+    if not raw:
+        logger.warning("transform_proposicao_interna: lista vazia recebida")
+        return pd.DataFrame(columns=[
+            "numero", "ementa", "autor", "data", "localizacao",
+            "situacao", "ano", "nome_norm"
+        ])
+
+    df = pd.DataFrame(raw)
+
+    def _encontrar_coluna(*termos: str) -> Optional[str]:
+        for t in termos:
+            for c in df.columns:
+                if t in c.lower():
+                    return c
+        return None
+
+    # Colunas confirmadas + termos de fallback para robustez futura
+    col_numero    = _encontrar_coluna("prop", "num")
+    col_ementa    = _encontrar_coluna("ement", "descri", "objeto")
+    col_autor     = _encontrar_coluna("autor", "propon", "vereador")
+    col_data      = _encontrar_coluna("mov", "data", "dt_", "data")
+    col_local     = _encontrar_coluna("localiz", "destino", "local")
+    col_situacao  = _encontrar_coluna("situ", "status", "andamento")
+
+    result = pd.DataFrame()
+    for campo, col_orig in [
+        ("numero",      col_numero),
+        ("ementa",      col_ementa),
+        ("autor",       col_autor),
+        ("data",        col_data),
+        ("localizacao", col_local),
+        ("situacao",    col_situacao),
+    ]:
+        result[campo] = df[col_orig].astype(str).str.strip() if col_orig else ""
+
+    def _extrair_ano(row) -> Optional[int]:
+        for v in row.values:
+            m = re.search(r"\b(20\d{2})\b", str(v))
+            if m:
+                return int(m.group(1))
+        return None
+
+    result["ano"]       = df.apply(_extrair_ano, axis=1)
+    result["nome_norm"] = result["autor"].apply(normalizar_nome)
+
+    result = result[
+        result["ano"].isna() | (result["ano"] >= config.ANO_INICIO_LEGISLATURA)
+    ]
+
+    logger.info(f"transform_proposicao_interna: {len(result)} registros transformados.")
+    return result.reset_index(drop=True)
+
+
 # =============================================================================
 # SECAO 3 -- Metricas e Indices
 # =============================================================================
@@ -317,6 +386,7 @@ def run_full_pipeline(force: bool = False) -> dict:
         ProposicaoScraper,
         VereadorScraper,
     )
+    from modules.scraper_prop_interna import ProposicaoInternaScraper
 
     resultados = {}
 
@@ -368,6 +438,20 @@ def run_full_pipeline(force: bool = False) -> dict:
         try:
             raw = ProposicaoScraper().extract(anos=[str(a) for a in config.ANOS_COBERTURA])
             df  = transform_produtividade(raw)
+            save_parquet(df, nome)
+            resultados[nome] = f"ok ({len(df)} registros)"
+        except Exception as e:
+            logger.error(f"{nome}: {e}", exc_info=True)
+            resultados[nome] = f"erro: {e}"
+    else:
+        resultados[nome] = "cache valido"
+
+    # Proposicoes Internas
+    nome = "prop_interna"
+    if force or not cache_valido(nome):
+        try:
+            raw = ProposicaoInternaScraper().extract()
+            df  = transform_proposicao_interna(raw)
             save_parquet(df, nome)
             resultados[nome] = f"ok ({len(df)} registros)"
         except Exception as e:
