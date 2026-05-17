@@ -212,7 +212,7 @@ def transform_proposicao_interna(raw: list) -> pd.DataFrame:
     col_numero    = _encontrar_coluna("prop", "num")
     col_ementa    = _encontrar_coluna("ement", "descri", "objeto")
     col_autor     = _encontrar_coluna("autor", "propon", "vereador")
-    col_data      = _encontrar_coluna("mov", "data", "dt_", "data")
+    col_data      = _encontrar_coluna("mov", "data", "dt_")
     col_local     = _encontrar_coluna("localiz", "destino", "local")
     col_situacao  = _encontrar_coluna("situ", "status", "andamento")
 
@@ -228,7 +228,15 @@ def transform_proposicao_interna(raw: list) -> pd.DataFrame:
         result[campo] = df[col_orig].astype(str).str.strip() if col_orig else ""
 
     def _extrair_ano(row) -> Optional[int]:
-        for v in row.values:
+        # Prioridade: extrai do número da proposição (formato TIPO-NUM/ANO)
+        if col_numero and col_numero in row.index:
+            m = re.search(r"/(\d{4})\s*$", str(row[col_numero]).strip())
+            if m:
+                return int(m.group(1))
+        # Fallback: qualquer campo exceto datas no formato DD/MM/YYYY
+        for k, v in row.items():
+            if any(t in str(k).lower() for t in ("mov", "data", "dt")):
+                continue
             m = re.search(r"\b(20\d{2})\b", str(v))
             if m:
                 return int(m.group(1))

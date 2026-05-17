@@ -56,7 +56,7 @@ def _ultima_atualizacao() -> str:
     timestamps = [v for v in dados.values() if isinstance(v, str) and "T" in v]
     if not timestamps:
         return "Desconhecido"
-    return min(timestamps)[:19].replace("T", " ")
+    return max(timestamps)[:19].replace("T", " ")
 
 
 def _cache_expirado() -> bool:
@@ -258,8 +258,9 @@ def render_sidebar(
     )
 
     return {
-        "anos_sel":       anos_sel,
-        "meses_sel":      meses_sel,
-        "vereadores_sel": vereadores_sel,
+        "anos_sel":           anos_sel,
+        "meses_sel":          meses_sel,
+        "vereadores_sel":     vereadores_sel,
+        "ultima_atualizacao": _ultima_atualizacao(),
         **filtrados,
     }

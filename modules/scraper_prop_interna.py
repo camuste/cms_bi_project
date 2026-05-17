@@ -37,7 +37,6 @@ from typing import Optional
 
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 from tenacity import (
     retry,
     stop_after_attempt,
@@ -276,9 +275,21 @@ class ProposicaoInternaScraper:
     # FILTRO TEMPORAL
     # -------------------------------------------------------------------------
 
-    def _inferir_ano(self, registro: dict) -> Optional[int]:
-        """Infere o ano do registro buscando padrão 20XX em qualquer campo."""
-        for valor in registro.values():
+    def _ano_da_proposicao(self, registro: dict) -> Optional[int]:
+        """
+        Extrai o ano do número da proposição: 'PIN-210/2026' → 2026.
+        Busca especificamente na chave que contém 'prop', usando o padrão
+        /YYYY no final do valor. Fallback: primeiro ano encontrado em qualquer campo.
+        """
+        for chave, valor in registro.items():
+            if "prop" in chave.lower():
+                m = re.search(r"/(\d{4})\s*$", str(valor).strip())
+                if m:
+                    return int(m.group(1))
+        # Fallback: percorre todos os valores (menos preciso — evita movimentado)
+        for chave, valor in registro.items():
+            if any(k in chave.lower() for k in ("mov", "data", "dt")):
+                continue  # ignora campos de data (DD/MM/YYYY) para evitar falsos positivos
             m = re.search(r"\b(20\d{2})\b", str(valor))
             if m:
                 return int(m.group(1))
@@ -288,7 +299,7 @@ class ProposicaoInternaScraper:
         """Remove registros anteriores a ANO_INICIO_LEGISLATURA."""
         filtrados = [
             r for r in registros
-            if (ano := self._inferir_ano(r)) is None or ano >= self._ano_inicio
+            if (ano := self._ano_da_proposicao(r)) is None or ano >= self._ano_inicio
         ]
         removidos = len(registros) - len(filtrados)
         if removidos:
@@ -297,10 +308,11 @@ class ProposicaoInternaScraper:
 
     def _tem_registros_antigos(self, registros: list[dict]) -> bool:
         """True se a lista contém ao menos um registro com ano < ANO_INICIO_LEGISLATURA."""
-        return any(
-            (ano := self._inferir_ano(r)) is not None and ano < self._ano_inicio
-            for r in registros
-        )
+        anos = [self._ano_da_proposicao(r) for r in registros]
+        anos_validos = [a for a in anos if a is not None]
+        if anos_validos:
+            _logger.info(f"Anos detectados nesta página: min={min(anos_validos)} max={max(anos_validos)}")
+        return any(a is not None and a < self._ano_inicio for a in anos)
 
     # -------------------------------------------------------------------------
     # MÉTODO PÚBLICO
@@ -356,7 +368,16 @@ class ProposicaoInternaScraper:
             return self._filtrar_por_ano(todos_registros)
 
         # ── Páginas seguintes: POST AJAX nav_next ──────────────────────────
-        MAX_PAGINAS = 500  # 500 × 20 = 10.000 registros máx.
+        MAX_PAGINAS = 200  # 200 × 20 = 4.000 registros máx. (cap de segurança)
+        seen_proposicoes: set[str] = set()
+        # Inicializa seen com os da página 1
+        for r in todos_registros:
+            chave_prop = next(
+                (v for k, v in r.items() if "prop" in k.lower()), None
+            )
+            if chave_prop:
+                seen_proposicoes.add(chave_prop)
+
         while pagina < MAX_PAGINAS:
             pagina += 1
             _logger.info(f"Coletando página {pagina}...")
@@ -370,6 +391,19 @@ class ProposicaoInternaScraper:
             if not registros:
                 _logger.info("Página vazia — fim da paginação.")
                 break
+
+            # Detecção de loop infinito: página idêntica à anterior
+            props_pagina = {
+                next((v for k, v in r.items() if "prop" in k.lower()), "")
+                for r in registros
+            }
+            if props_pagina and props_pagina.issubset(seen_proposicoes):
+                _logger.warning(
+                    f"Página {pagina} contém apenas proposições já vistas — "
+                    "loop infinito detectado. Encerrando."
+                )
+                break
+            seen_proposicoes.update(props_pagina)
 
             todos_registros.extend(registros)
 

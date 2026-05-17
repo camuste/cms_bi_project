@@ -481,8 +481,27 @@ class FrequenciaScraper(ScriptCaseScraper):
                     r["mes_ano"] = None
                 return records
 
+            # Filtro de escopo: descarta meses anteriores à legislatura atual.
+            # O ScriptCase lista os meses do mais recente ao mais antigo,
+            # portanto o break abaixo interrompe assim que cruzamos o limite.
+            meses = [
+                (v, d) for v, d in meses
+                if v[:4].isdigit() and int(v[:4]) >= config.ANO_INICIO_LEGISLATURA
+            ]
+            self._log.info(
+                f"Meses na legislatura atual ({config.ANO_INICIO_LEGISLATURA}+): {len(meses)}"
+            )
+
             records = []
             for i, (valor, display) in enumerate(meses):
+                ano_mes = int(valor[:4]) if valor[:4].isdigit() else 0
+                if ano_mes < config.ANO_INICIO_LEGISLATURA:
+                    self._log.info(
+                        f"Mes {valor} anterior a {config.ANO_INICIO_LEGISLATURA} "
+                        f"-- encerrando coleta de frequencia."
+                    )
+                    break
+
                 self._log.info(f"[{i+1}/{len(meses)}] Mes: {valor}")
                 field, label, dtype = config.FIELD_MAP["frequencia"]["mes_ano"]
                 parm = self._build_parm(field, label, dtype, valor, display)
